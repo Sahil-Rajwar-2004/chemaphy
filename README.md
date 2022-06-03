@@ -20,6 +20,11 @@ Physics
     1. numpy
     2. trigo
     3. pandas
+    
+## Installation
+```bash
+    pip install chemaphy
+```
 
 ## How it works?
 
