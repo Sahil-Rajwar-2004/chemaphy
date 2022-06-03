@@ -38,7 +38,7 @@ from scicalc import LogarithmicFunction
 print(chemaphy.pi.value)
 print(ProjectileMotion.horizontal_range(100,Constants.g_Earth,45))
 print(LogarithmicFunction.log_e(2))
-    print(LogarithmicFunction.log_10(2))
+print(LogarithmicFunction.log_10(2))
 ```
 ### Output
 
