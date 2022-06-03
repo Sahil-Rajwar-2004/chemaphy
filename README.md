@@ -12,7 +12,7 @@ Physics
 
 ## Author
 
-- "https://twitter.com/justSahilRajwar"
+- https://twitter.com/justSahilRajwar
 
 # Documentation
 
