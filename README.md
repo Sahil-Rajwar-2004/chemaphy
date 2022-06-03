@@ -23,30 +23,30 @@ Physics
     
 ## Installation
 ```bash
-    pip install chemaphy
+pip install chemaphy
 ```
 
 ## How it works?
 
 ```bash
 
-    import chemaphy
-    from scicalc import Constants
-    from scicalc import ProjectileMotion
-    from scicalc import LogarithmicFunction
+import chemaphy
+from scicalc import Constants
+from scicalc import ProjectileMotion
+from scicalc import LogarithmicFunction
 
-    print(chemaphy.pi.value)
-    print(ProjectileMotion.horizontal_range(100,Constants.g_Earth,45))
-    print(LogarithmicFunction.log_e(2))
+print(chemaphy.pi.value)
+print(ProjectileMotion.horizontal_range(100,Constants.g_Earth,45))
+print(LogarithmicFunction.log_e(2))
     print(LogarithmicFunction.log_10(2))
 ```
 ### Output
 
 ```bash
-  3.1415
-  1020.41 m
-  0.693
-  0.301
+3.1415
+1020.41 m
+0.693
+0.301
 ```
 
 # Constants
