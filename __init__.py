@@ -221,8 +221,6 @@ class ProjectileMotion:
         return f"{round(T,2)} sec"
 
 
-# PENDING..........................................................
-
 class AlternatingCurrent:
     def irms2i(rms):
         i = rms*math.sqrt(2)
@@ -256,7 +254,26 @@ class AlternatingCurrent:
         Z = math.sqrt(R**2+(Xl-Xc)**2)
         return f"{round(Z,2)} Ohm"
 
-# ABOVE.............................................................
+    def phase(Xc,Xl,R):
+        phi = trigo.arc_tan((Xc-Xl)/R)
+        return f"{round(phi,2)}"
+
+    def power_dissipated(v,i):
+        p = i**2*v
+        return f"{round(p,2)}"
+
+    def resonance_frequency(L,C):
+        f = 1/(2*pi.value*math.sqrt(L*C))
+        return f"{round(f,2)} Hz"
+
+    def parallel_resonance_frequency(L,C,R):
+        f = (1/(2*pi.value))*math.sqrt(1/(L*C)-(R**2/L**2))
+        return f"{round(f,2)} Hz"
+
+    def qualitative_factor(R,L,C):
+        Q = (1/R)*math.sqrt(L/C)
+        return f"{round(Q,2)}"
+
 
 class DistanceFormula:
 
