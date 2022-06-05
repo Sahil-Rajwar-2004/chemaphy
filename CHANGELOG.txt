@@ -19,7 +19,7 @@ Note (7:23 PM 6/3/2022)
 
 version-0.5 (8:34 PM 6/3/2022)
 -----------------------
-- Fifth Release (all the bugs are resolved)
+- Fifth Release (all the bugs has been resolved)
 
 version-0.6 (2:13 PM 6/4/2022)
 -----------------------
