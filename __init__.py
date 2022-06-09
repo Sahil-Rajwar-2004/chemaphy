@@ -348,7 +348,7 @@ class Statistics:
         lower_Q = int((len(args)+1)*0.25)
         middle_Q = int((len(args)+1)*0.5)
         upper_Q = int((len(args)+1)*0.75)
-        return f"Lower Quartile: {rel[lower_Q-1]}\nMiddle Quartile: {rel[middle_Q-1]}\nUpper Quartile: {rel[upper_Q-1]}"
+        return [rel[lower_Q-1],rel[middle_Q-1],rel[upper_Q-1]]
 
     def Absolute(num) -> int:
         """
@@ -381,7 +381,7 @@ class Statistics:
         ===========================\n
         `x̄ = sum of the data/total number of the data`
         """
-        return f"{round(sum(args)/len(args),3)}"
+        return round(sum(args)/len(args),3)
 
     def RunningMean(args) -> list:
         """
@@ -409,7 +409,7 @@ class Statistics:
         for i in range(0,len(args)):
             a = 1/(args[i])
             s += a
-        return f"{round(len(args)/s,3)}"
+        return round(len(args)/s,3)
 
     def GeometricMean(args) -> list:
         """
@@ -427,7 +427,7 @@ class Statistics:
         for i in range(0,len(args)):
             a = args[i]
             p *= a
-        return f"{round(p**(1/len(args)),3)}"
+        return round(p**(1/len(args)),3)
 
     def Mode(args) -> list:
         """
@@ -435,10 +435,10 @@ class Statistics:
 
         for more info: <https://www.google.com/search?q=mode>
         """
-        return f"{round(stats.mode(args),3)}"
+        return round(stats.mode(args),3)
 
     def Range(args) -> list:
-        return f"{max(args)-min(args)}"
+        return max(args)-min(args)
 
     def Product(args) -> list:
         """
@@ -447,14 +447,14 @@ class Statistics:
         p = 1
         for i in range(0,len(args)):
             p *= args[i]
-        return f"{p}"
+        return p
 
     def SquareSum(args) -> list:
         s = 0
         for i in range(0,len(args)):
             sq = args[i]**2
             s += sq
-        return f"{s}"
+        return s
 
     def StandardDeviation(args) -> list:
         mean = round(sum(args)/len(args),3)
@@ -491,7 +491,7 @@ class Statistics:
                     b += 1
                 else:
                     b += 0
-            return f"{((b/len(args))*100)}"
+            return round((b/len(args))*100,2)
         else:
             return f"Unexpected Input! {n} is not in {args}!"
 
@@ -502,7 +502,7 @@ class Statistics:
             a = abs(args[i]-m)
             rel.append(a)
         mid = Statistics.Median(rel)
-        return f"{mid}"
+        return mid
 
     def CumSum(args) -> list:
         s = 0
@@ -555,7 +555,7 @@ class Statistics:
             N2 = len(args)*xy-x*y
             D2 = len(args)*x2-x**2
             slope = round(N2/D2,3)
-            return f"Intercept: {intercept}\nSlope: {slope}\ny = {slope}x + {intercept}"
+            return [intercept,slope]
         else:
             return "Length of the both parameters should be euqal"
 
@@ -575,7 +575,7 @@ class Statistics:
         for i in range(0,len(f)):
             r = f[i]/len(args)
             rel.append(r)
-        return f"{freq}\n{rel}"
+        return [freq,rel]
 
     def CorrelationCoefficient(args,kwargs) -> list:
         if len(args) == len(kwargs):
@@ -593,7 +593,7 @@ class Statistics:
                 y2 += c
             N = len(args)*xy-x*y
             D = math.sqrt((len(args)*x2-x**2)*(len(args)*y2-y**2))
-            return f"{round(N/D,3)}"
+            return round(N/D,3)
         else:
             return "Length of the both parameters should be euqal"
 
@@ -613,7 +613,7 @@ class Statistics:
                 xy += b
             N = len(args)*xy-x*y
             D = math.sqrt((len(args)*x2-x**2)*(len(args)*y2-y**2))
-            return f"{round(N/D,3)}"
+            return round(N/D,3)
         else:
             return "Length of the both parameters should be euqal"
 
