@@ -12,7 +12,7 @@ Physics
 
 ## Author
 
-- https://twitter.com/justSahilRajwar
+- ["Sahil Rajwar"](https://twitter.com/justSahilRajwar)
 
 # Documentation
 
@@ -31,14 +31,17 @@ pip install chemaphy
 ```bash
 
 import chemaphy
-from scicalc import Constants
-from scicalc import ProjectileMotion
-from scicalc import LogarithmicFunction
+from chemaphy import Constants
+from chemaphy import ProjectileMotion
+from chemaphy import LogarithmicFunction
+from chemaphy import Statistics
 
 print(chemaphy.pi.value)
 print(ProjectileMotion.horizontal_range(100,Constants.g_Earth,45))
 print(LogarithmicFunction.log_e(2))
 print(LogarithmicFunction.log_10(2))
+print(Statistics.Mean([1,2,3,4,5,6,7,8,9,0]))
+print(Statistics.Median([1,2,3,4,5,6,7,8,9,0]))
 ```
 ### Output
 
@@ -47,6 +50,8 @@ print(LogarithmicFunction.log_10(2))
 1020.41 m
 0.693
 0.301
+4.5
+5.5
 ```
 
 # Constants
