@@ -465,6 +465,12 @@ class Statistics:
         total = sum(rep)
         return (round(math.sqrt(total/(len(args)-1)),3))
 
+    def ZScore(args:list,num:int):
+        m = Statistics.Mean(args)
+        dev = Statistics.StandardDeviation(args)
+        a = num-m
+        return a/dev
+
     def Median(args) -> list:
         if len(args)%2 == 0:
             mid1 = int(len(args)/2)
@@ -616,6 +622,32 @@ class Statistics:
             return round(N/D,3)
         else:
             return "Length of the both parameters should be euqal"
+
+    def MeanSquaredError(actual,predicted) -> list:
+        """
+        The measure of how close a fitted line is to data points. For every data point,\n
+        you take the distance vertically from the point to the corresponding y value on the curve fit (the error),\n
+        and square the value\n
+
+        for more info: <https://www.google.com/search?q=mean+squared+error>\n
+
+        ===========================\n
+        Mathematical Representation\n
+        ===========================\n
+        `(1/n)/summation((observed-predicted)^2)`
+
+        `n` number of data points\n
+        `observed` oberserved data points\n
+        `predicted` predicte data points
+        """
+        if len(actual) == len(predicted):
+            rel = []
+            for i in range(0,len(actual)):
+                a = (actual[i]-predicted[i])**2
+                rel.append(a)
+            return sum(rel)/len(actual)
+        else:
+            return "Length of both parameters are unequal"
 
 class DistanceFormula:
 
