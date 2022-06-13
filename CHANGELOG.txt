@@ -30,11 +30,15 @@ NOTE (2:21 AM 6/6/2022)
 
 version-0.7 (7:05 PM 6/9/2022)
 -----------------------
-- Sixth Release
-    bugs were found so this version isn't available right now
-    
-version-0.7.1 (10:43 PM 6/9/2022)
------------------------
-- Sixth Release
+- Seventh Release
     New Feature is added called Statistics to deal with different datasets.
+
+version-0.7.1 (10:19 PM 6/9/2022)
+-----------------------
+- Eighth Release
     Bug Fixes
+
+version-0.7.2 (8:02 PM 6/13/2022)
+-----------------------
+- Ninth Release
+    Minor Changes: Improvements in some functions to make more reliable and fast computing.
