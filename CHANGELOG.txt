@@ -42,3 +42,8 @@ version-0.7.2 (8:02 PM 6/13/2022)
 -----------------------
 - Ninth Release
     Minor Changes: Improvements in some functions to make more reliable and fast computing.
+
+version-0.7.3 (12:38 AM 6/15/2022)
+-----------------------
+- Tenth Release
+    Minor Changes: Round of figure MSE (Mean Squared Error) function were added
