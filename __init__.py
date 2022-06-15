@@ -645,7 +645,7 @@ class Statistics:
             for i in range(0,len(actual)):
                 a = (actual[i]-predicted[i])**2
                 rel.append(a)
-            return sum(rel)/len(actual)
+            return round(sum(rel)/len(actual),3)
         else:
             return "Length of both parameters are unequal"
 
