@@ -41,6 +41,7 @@ print(lf.log_e(2))
 print(lf.log_10(2))
 print(Statistics.Mean([1,2,3,4,5,6,7,8,9,0]))
 print(Statistics.Median([1,2,3,4,5,6,7,8,9,0]))
+print(Statistics.Quartiles([375, 211, 23, 39, 118, 97, 971, 702, 143, 9]))
 ```
 ### Output
 
@@ -51,6 +52,7 @@ print(Statistics.Median([1,2,3,4,5,6,7,8,9,0]))
 0.301
 4.5
 5.5
+[39, 130.5, 375] -> [Higher Quartile, Middle Quartile, Lower Quartile]
 ```
 
 # Constants
