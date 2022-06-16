@@ -31,13 +31,12 @@ pip install chemaphy
 ```bash
 
 import chemaphy
-from chemaphy import Constants
-from chemaphy import ProjectileMotion
-from chemaphy import LogarithmicFunction
+from chemaphy import ProjectileMotion as pm
+from chemaphy import LogarithmicFunction as lf
 from chemaphy import Statistics
 
 print(chemaphy.pi.value)
-print(ProjectileMotion.horizontal_range(100,Constants.g_Earth,45))
+print(ProjectileMotion.HorizontalRange(100,chemaphy.g_earth.value,45))
 print(LogarithmicFunction.log_e(2))
 print(LogarithmicFunction.log_10(2))
 print(Statistics.Mean([1,2,3,4,5,6,7,8,9,0]))
