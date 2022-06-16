@@ -36,9 +36,9 @@ from chemaphy import LogarithmicFunction as lf
 from chemaphy import Statistics
 
 print(chemaphy.pi.value)
-print(ProjectileMotion.HorizontalRange(100,chemaphy.g_earth.value,45))
-print(LogarithmicFunction.log_e(2))
-print(LogarithmicFunction.log_10(2))
+print(pm.HorizontalRange(100,chemaphy.g_earth.value,45))
+print(lf.log_e(2))
+print(lf.log_10(2))
 print(Statistics.Mean([1,2,3,4,5,6,7,8,9,0]))
 print(Statistics.Median([1,2,3,4,5,6,7,8,9,0]))
 ```
