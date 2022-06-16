@@ -333,22 +333,24 @@ class Statistics:
         the data must be in ascending order.\n
 
         for more info: <https://www.google.com/search?q=quartiles>\n
-
-        ===========================\n
-        Mathematical Representation\n
-        ===========================\n
-        lower:  `(N+1)*1/2`\n
-        middle: `(N+1)*1/4`\n
-        upper:  `(N+1)*3/4`\n
-
-        where `N` is number of data
-
         """
         rel = sorted(args,reverse = False)
-        lower_Q = int((len(args)+1)*0.25)
-        middle_Q = int((len(args)+1)*0.5)
-        upper_Q = int((len(args)+1)*0.75)
-        return [rel[lower_Q-1],rel[middle_Q-1],rel[upper_Q-1]]
+        if len(args)%2 == 0:
+            part = int(len(args)/2)
+            rel1 = rel[0:part]
+            rel2 = rel[part:len(rel)]
+            Q1 = Statistics.Median(rel1)
+            Q2 = Statistics.Median(args)
+            Q3 = Statistics.Median(rel2)
+            return [Q1,Q2,Q3]
+        else:
+            part = int(len(args)/2)
+            rel1 = rel[0:part]
+            rel2 = rel[part+1:len(rel)]
+            Q1 = Statistics.Median(rel1)
+            Q2 = Statistics.Median(args)
+            Q3 = Statistics.Median(rel2)
+            return [Q1,Q2,Q3]
 
     def Absolute(num) -> int:
         """
