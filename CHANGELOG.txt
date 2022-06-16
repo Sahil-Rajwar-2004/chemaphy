@@ -56,4 +56,3 @@ version-0.7.4 (9:36 PM 6/16/2022)
 -----------------------
 - Eleventh release
     Major Changes: Bug fixed in Quartiles function
-
