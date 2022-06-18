@@ -352,6 +352,29 @@ class Statistics:
             Q3 = Statistics.Median(rel2)
             return [Q1,Q2,Q3]
 
+    def IQR(args) -> list:
+        q = Statistics.Quartiles(args)
+        iqr = q[len(q)-1]-q[0]
+        return iqr
+
+    def Outliers(args) -> list:
+        q = Statistics.Quartiles(args)
+        iqr = Statistics.IQR(args)
+        args_range = [q[0]-1.5*iqr,q[len(q)-1]+1.5*iqr]
+        out = []
+        for i in range(0,len(args)):
+            if args[i]>=args_range[0]:
+                if args[i]<=args_range[1]:
+                    pass
+                else:
+                    out.append(args[i])
+            else:
+                out.append(args[i])
+        if out == []:
+            return None
+        else:
+            return out
+
     def Absolute(num) -> int:
         """
         Absolute value or Modulus Value both are functions that always gives positive number no matter what kind of integer you are giving as an input\n
