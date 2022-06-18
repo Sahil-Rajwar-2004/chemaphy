@@ -2,7 +2,7 @@ Change Log:
 ==========
 
 +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
-|Note: Download the latest version only! (v-0.7.4) bugs free and fast calculation|
+|Note: Download the latest version only! (v-0.7.5) bugs free and fast calculation|
 +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
 
 version-0.1 (12:01 PM 5/30/2022)
@@ -56,3 +56,9 @@ version-0.7.4 (9:36 PM 6/16/2022)
 -----------------------
 - Eleventh release
     Major Changes: Bug fixed in Quartiles function
+
+version-0.7.5 (6:17 PM 6/18/2022)
+-----------------------
+- Twelfth release
+    New Feature: Inter Quartiles Range(IQR) and Outliers
+
