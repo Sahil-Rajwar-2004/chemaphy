@@ -340,7 +340,7 @@ class Statistics:
             rel1 = rel[0:part]
             rel2 = rel[part:len(rel)]
             Q1 = Statistics.Median(rel1)
-            Q2 = Statistics.Median(args)
+            Q2 = Statistics.Median(rel)
             Q3 = Statistics.Median(rel2)
             return [Q1,Q2,Q3]
         else:
@@ -348,7 +348,7 @@ class Statistics:
             rel1 = rel[0:part]
             rel2 = rel[part+1:len(rel)]
             Q1 = Statistics.Median(rel1)
-            Q2 = Statistics.Median(args)
+            Q2 = Statistics.Median(rel)
             Q3 = Statistics.Median(rel2)
             return [Q1,Q2,Q3]
 
@@ -497,13 +497,14 @@ class Statistics:
         return a/dev
 
     def Median(args) -> list:
-        if len(args)%2 == 0:
-            mid1 = int(len(args)/2)
+        rel = sorted(args, reverse = False)
+        if len(rel)%2 == 0:
+            mid1 = int(len(rel)/2)
             mid2 = mid1-1
-            return (args[mid1]+args[mid2])/2
+            return (rel[mid1]+rel[mid2])/2
         else:
-            mid = int(len(args)/2)
-            return args[mid]
+            mid = int(len(rel)/2)
+            return rel[mid]
 
     def MeanDeviation(args) -> list:
         mean = round(sum(args)/len(args),3)
