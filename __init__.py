@@ -675,6 +675,51 @@ class Statistics:
         else:
             return "Length of both parameters are unequal"
 
+
+class Temperature:
+    def c2k(celcius) -> int:
+        if celcius >= -273.15:
+            k = celcius+273.15
+            return round(k,2)
+        else:
+            raise ValueError("Temperature below -273.15 Celcius is not possible")
+
+    def c2f(celcius) -> int:
+        if celcius >= -273.15:
+            f = round((celcius*1.8)+32,2)
+            return round(f,2)
+        else:
+            raise ValueError("Temperature below -273.15 celcius is not possible")
+
+    def k2c(kelvin) -> int:
+        if kelvin >= 0:
+            c = kelvin-273.15
+            return round(c,2)
+        else:
+            raise ValueError("Temperature below 0 kelvin is not possible")
+
+    def k2f(kelvin) -> int:
+        if kelvin >= 0:
+            f = ((kelvin-273.15)*1.8)+32
+            return round(f,2)
+        else:
+            raise ValueError("Temperature below 0 kelvin is not possible")
+
+    def f2c(fahrenheit) -> int:
+        if fahrenheit >= -459.67:
+            c = round((fahrenheit-32)*0.55,2)
+            return round(c,2)
+        else:
+            raise ValueError("Temperature below -459.67 fahrenheit is not possible")
+
+    def f2k(fahrenheit) -> int:
+        if fahrenheit >= -459.67:
+            k = ((fahrenheit-32)*5/9)+273.15
+            return round(k,2)
+        else:
+            raise ValueError("Temperature below -459.67 fahrenheit is not possible")
+
+
 class DistanceFormula:
 
     """
