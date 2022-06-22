@@ -2,7 +2,7 @@ Change Log:
 ==========
 
 +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
-|Note: Download the latest version only! (v-0.7.6) bugs free and fast calculation|
+|Note: Download the latest version only! (v-0.8.0) bugs free and fast calculation|
 +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
 
 version-0.1 (12:01 PM 5/30/2022)
@@ -67,6 +67,10 @@ version-0.7.6 (2:53 PM 6/20/2022)
 - Twelfth release
     Major Changes: Calculation error in Quartiles has been fixed!
     Note: I recommend to Download latest version of chemaphy package...
-    
-NOTE (2:53 PM 6/20/2022)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~ version-0.8 (Work in progress...) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+version-0.8.0 (12:02 AM 6/23/2022)
+-----------------------
+- Thirteenth release
+    New Feature: Temperature Converter
+    Note: I recommend to Download latest version of chemaphy package...
+
