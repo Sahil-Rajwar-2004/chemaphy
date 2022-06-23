@@ -23,10 +23,13 @@ epsilon_0 = Constant(8.85e-12,"m^(-3) kg^(-1) s^4 A^2","permitivity in free spac
 k = Constant(9e9,"N m^2 C^(-2)","Coulombs constant")
 c = Constant(3e8,"m/s","speed of light in vacuum")
 R = Constant(1.0973e7,"m^(-1)","Rydbergs's Constant")
+gas_constant = Constant(8.3145,"J mol^(-1) K^(-1)","Gas Constant")
 
 pi = Constant(3.1415,None,None)
 exp = Constant(2.7182,None,None)
+inf = Constant(np.inf,None,"Infinity")
 
+ang = Constant(1e-10,"m","Angstrom Measuring unit `1A = 10^(-10)m`")
 exa = Constant(1e18,None,None)
 peta = Constant(1e15,None,None)
 tera = Constant(1e12,None,None)
@@ -36,6 +39,7 @@ kilo = Constant(1e3,None,None)
 hecto = Constant(1e2,None,None)
 deca = Constant(1e1,None,None)
 one = Constant(1e0,None,None)
+zero = Constant(0e0,None,None)
 deci = Constant(1e-1,None,None)
 centi = Constant(1e-2,None,None)
 milli = Constant(1e-3,None,None)
@@ -45,9 +49,9 @@ pico = Constant(1e-12,None,None)
 femto = Constant(1e-15,None,None)
 atto = Constant(1e-18,None,None)
 
-Mass_e = Constant(9.1e-31,"kg","Mass of electron")
-Mass_p = Constant(1.67262e-27,"kg","Mass of proton")
-Mass_n = Constant(1.67493e-27,"kg","Mass of neutron")
+mass_e = Constant(9.1e-31,"kg","Mass of electron")
+mass_p = Constant(1.67262e-27,"kg","Mass of proton")
+mass_n = Constant(1.67493e-27,"kg","Mass of neutron")
 
 g_sun = Constant(274,"m/s^2","garvity on Sun")
 g_mercury = Constant(3.7,"m/s^2","gravity on Mercury")
@@ -85,15 +89,15 @@ radius_neptune = Constant(24622000,"m","Radius of Neptune")
 
 class ModernPhysics:
     def kinetic_energy_of_electron(Z,n) -> int:
-        K = (Mass_e.value*(Z**2)*(e.value**4))/(8*(epsilon_0.value**2)*(h.value**2)*(n**2))
+        K = (mass_e.value*(Z**2)*(e.value**4))/(8*(epsilon_0.value**2)*(h.value**2)*(n**2))
         return f"{round(K,70)} j"
 
     def potential_energy_of_atom(Z,n) -> int:
-        V = -(Mass_e.value*Z**2*e.value**4)/(4*epsilon_0.value**2*h.value**2*n**2)
+        V = -(mass_e.value*Z**2*e.value**4)/(4*epsilon_0.value**2*h.value**2*n**2)
         return f"{round(V,70)} j"
 
     def total_energy_of_atom(Z,n) -> int:
-        E = -(Mass_e.value*Z**2*e.value**4)/(8*epsilon_0.value**2*h.value**2*n**2)
+        E = -(mass_e.value*Z**2*e.value**4)/(8*epsilon_0.value**2*h.value**2*n**2)
         return f"{round(E,70)} j"
 
     def freq(wave_len) -> int:
@@ -676,48 +680,116 @@ class Statistics:
             return "Length of both parameters are unequal"
 
 
+class BinaryConverter:
+    def str2binary(args) -> str:
+        l = []
+        words = list(args)
+        print(words)
+        for i in range(0,len(words)):
+            to_num = ord(words[i])
+            to_bin = int(bin(to_num)[2:])
+            l.append(to_bin)
+        return l
+
+    def str2hexadecimal(args) -> str:
+        l = []
+        words = list(args)
+        print(words)
+        for j in range(0,len(words)):
+            to_num = ord(words[j])
+            to_bin = hex(to_num)[2:]
+            l.append(to_bin)
+        return l
+
+    def str2octadecimal(args) -> str:
+        l = []
+        words = list(args)
+        print(words)
+        for k in range(0,len(words)):
+            to_num = ord(words[k])
+            to_bin = int(oct(to_num)[2:])
+            l.append(to_bin)
+        return l
+
+    def int2binary(args) -> (list|int):
+        if type(args) == list:
+            b = []
+            for i in range(0,len(args)):
+                item = bin(args[i])
+                b.append(item[2:])
+            return b
+        elif type(args) == int:
+            return bin(args)[2:]
+        else:
+            return "argument should be integer or list"
+
+    def int2hexadecimal(args) -> (list|int):
+        if type(args) == list:
+            h = []
+            for j in range(0,len(args)):
+                item = hex(args[j])
+                h.append(item[2:])
+            return h
+        elif type(args) == int:
+            return hex(args)[2:]
+        else:
+            return "argument should be integer or list"
+
+    def int2octadecimal(args) -> (list|int):
+        if type(args) == list:
+            o = []
+            for k in range(0,len(args)):
+                item = oct(args[k])
+                o.append(item[2:])
+            return o
+        elif type(args) == int:
+            return oct(args)[2:]
+        else:
+            return "argument should be integer or list"
+
+
 class Temperature:
     def c2k(celcius) -> int:
-        if celcius >= -273.15:
+        if celcius >= -273.15 and celcius <= 1.417e32:
             k = celcius+273.15
             return round(k,2)
         else:
-            raise ValueError("Temperature below -273.15 Celcius is not possible")
+            raise ValueError("Temperature below -273.15 and above 1.417*10^32 Celcius is not possible")
 
     def c2f(celcius) -> int:
-        if celcius >= -273.15:
+        if celcius >= -273.15 and celcius <= 1.417e32:
             f = round((celcius*1.8)+32,2)
             return round(f,2)
         else:
-            raise ValueError("Temperature below -273.15 celcius is not possible")
+            raise ValueError("Temperature below -273.15 and above 1.417*10^32 celcius is not possible")
 
     def k2c(kelvin) -> int:
-        if kelvin >= 0:
+        if kelvin >= 0 and kelvin <= 1.417e32:
             c = kelvin-273.15
             return round(c,2)
         else:
-            raise ValueError("Temperature below 0 kelvin is not possible")
+            raise ValueError("Temperature below 0 and above 1.417*10^32 kelvin is not possible")
 
     def k2f(kelvin) -> int:
-        if kelvin >= 0:
+        if kelvin >= 0 and kelvin <= 1.417e32:
             f = ((kelvin-273.15)*1.8)+32
             return round(f,2)
         else:
-            raise ValueError("Temperature below 0 kelvin is not possible")
+            raise ValueError("Temperature below 0 and above 1.417*10^32 kelvin is not possible")
 
     def f2c(fahrenheit) -> int:
-        if fahrenheit >= -459.67:
+        if fahrenheit >= -459.67 and fahrenheit <= 2.55e32:
             c = round((fahrenheit-32)*0.55,2)
             return round(c,2)
         else:
-            raise ValueError("Temperature below -459.67 fahrenheit is not possible")
+            raise ValueError("Temperature below -459.67 and above 2.55*10^(32) fahrenheit is not possible")
 
     def f2k(fahrenheit) -> int:
-        if fahrenheit >= -459.67:
+        if fahrenheit >= -459.67 and fahrenheit <= 2.55e32:
             k = ((fahrenheit-32)*5/9)+273.15
             return round(k,2)
         else:
-            raise ValueError("Temperature below -459.67 fahrenheit is not possible")
+            raise ValueError("Temperature below -459.67 and above 2.55*10^(32) fahrenheit is not possible")
 
 
 class DistanceFormula:
