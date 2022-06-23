@@ -1,9 +1,9 @@
 Change Log:
 ==========
 
-+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
-|Note: Download the latest version only! (v-0.8.0) bugs free and fast calculation|
-+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
++~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
+|Note: Download the latest version only! (v-0.9.0) bugs free,fast calculation and new features|
++~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
 
 version-0.1 (12:01 PM 5/30/2022)
 -----------------------
@@ -73,4 +73,10 @@ version-0.8.0 (12:02 AM 6/23/2022)
 - Thirteenth release
     New Feature: Temperature Converter
     Note: I recommend to Download latest version of chemaphy package...
+
+version-0.9.0 (2:38 AM 6/24/2022)
+-----------------------
+- Fourteenth release
+    New Feature: Binary Converter
+    Note: I recommend to Download the latest version of chemaphy package...
 
