@@ -58,7 +58,7 @@ print(Statistics.Quartiles([375, 211, 23, 39, 118, 97, 971, 702, 143, 9]))
 
 # Constants
 
-There are so many constants which we use for scientific calculations such as:\
+There are so many constants which we use for scientific calculations such as:
 
     1. Plank's Constants
     2. pi
