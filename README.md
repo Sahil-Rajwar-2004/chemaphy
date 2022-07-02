@@ -20,6 +20,7 @@ Physics
     1. numpy
     2. trigo
     3. pandas
+    4. statistics
     
 ## Installation
 ```bash
