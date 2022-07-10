@@ -66,29 +66,35 @@ version-0.7.6 (2:53 PM 6/20/2022)
 -----------------------
 - 13th release
     Major Changes: Calculation error in Quartiles has been fixed!
-    Note: I recommend to Download latest version of chemaphy package...
 
 version-0.8.0 (12:02 AM 6/23/2022)
 -----------------------
 - 14th release
     New Feature: Temperature Converter
-    Note: I recommend to Download latest version of chemaphy package...
 
 version-0.9.0 (2:38 AM 6/24/2022)
 -----------------------
 - 15th release
     New Feature: Binary Converter
-    Note: I recommend to Download latest version of chemaphy package...
 
+USELESS [
 version-1.0.0 (10:37 PM 7/10/2022)
 -----------------------
 - 16th release
     Major Changes: Periodic Table is now considered as an object instead of a function!
-    Note: I recommend to Download latest version of chemaphy package...
     
- version-1.1.0 (11:01PM 7/10/2022)
+version-1.1.0 (11:01PM 7/10/2022)
  -----------------------
  - 17th release
     Changes: Modifications
-    Note: I recommend to Download latest version of chemaphy package...
+]
+    
+Note (11:01PM 7/10/2022)
+-----------------------
+VERSION 1.0.0, 1.1.0  and 1.2.0 are available but these versions are useless so I recommend you to dowload the latest version 1.3.0 or above
 
+version-1.3.0 (11:47PM 7/10/2022)
+-----------------------
+- 19th release
+    Major Changes: All the bugs has been solved
+    Note: I recommend to Download version-1.3.0 or above
