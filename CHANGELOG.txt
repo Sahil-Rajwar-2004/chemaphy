@@ -87,6 +87,7 @@ version-1.0.0 (10:37 PM 7/10/2022)
     Note: I recommend to Download latest version of chemaphy package...
     
  version-1.1.0 (11:01PM 7/10/2022)
+ -----------------------
  - 17th release
     Changes: Modifications
     Note: I recommend to Download latest version of chemaphy package...
