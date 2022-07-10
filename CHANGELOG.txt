@@ -2,20 +2,20 @@ Change Log:
 ==========
 
 +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
-|Note: Download the latest version only! (v-1.0.0) with bugs free, fast calculation and new features|
+|Note: Download the latest version only! (v-1.1.0) with bugs free, fast calculation and new features|
 +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
 
 version-0.1 (12:01 PM 5/30/2022)
 -----------------------
-- First Release
+- 1st Release
 
 version-0.2 (2:49 AM 6/1/2022)
 -----------------------
-- Second Release
+- 2nd Release
 
 version-0.3 (5:24 PM 6/2/2022)
 -----------------------
-- Third Release
+- 3rd Release
 
 Note (7:23 PM 6/3/2022)
 -----------------------
@@ -23,66 +23,71 @@ Note (7:23 PM 6/3/2022)
 
 version-0.5 (8:34 PM 6/3/2022)
 -----------------------
-- Fifth Release (all the bugs has been resolved)
+- 5th Release (all the bugs has been resolved)
 
 version-0.6 (2:13 PM 6/4/2022)
 -----------------------
-- Sixth Release
+- 6th Release
 
 NOTE (2:21 AM 6/6/2022)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ version-0.7 (Work in progress...) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 version-0.7 (7:05 PM 6/9/2022)
 -----------------------
-- Seventh Release
+- 7th Release
     New Feature is added called Statistics to deal with different datasets.
 
 version-0.7.1 (10:19 PM 6/9/2022)
 -----------------------
-- Eighth Release
+- 8th Release
     Bug Fixes
 
 version-0.7.2 (8:02 PM 6/13/2022)
 -----------------------
-- Ninth Release
+- 9th Release
     Minor Changes: Improvements in some functions to make more reliable and fast computing.
 
 version-0.7.3 (12:38 AM 6/15/2022)
 -----------------------
-- Tenth Release
+- 10th Release
     Minor Changes: Round of figure MSE (Mean Squared Error) function were added
 
 version-0.7.4 (9:36 PM 6/16/2022)
 -----------------------
-- Eleventh release
+- 11th release
     Major Changes: Bug fixed in Quartiles function
 
 version-0.7.5 (6:17 PM 6/18/2022)
 -----------------------
-- Twelfth release
+- 12th release
     New Feature: Inter Quartiles Range(IQR) and Outliers
 
 version-0.7.6 (2:53 PM 6/20/2022)
 -----------------------
-- Twelfth release
+- 13th release
     Major Changes: Calculation error in Quartiles has been fixed!
     Note: I recommend to Download latest version of chemaphy package...
 
 version-0.8.0 (12:02 AM 6/23/2022)
 -----------------------
-- Thirteenth release
+- 14th release
     New Feature: Temperature Converter
     Note: I recommend to Download latest version of chemaphy package...
 
 version-0.9.0 (2:38 AM 6/24/2022)
 -----------------------
-- Fourteenth release
+- 15th release
     New Feature: Binary Converter
     Note: I recommend to Download latest version of chemaphy package...
 
 version-1.0.0 (10:37 PM 7/10/2022)
 -----------------------
-- Fourteenth release
+- 16th release
     Major Changes: Periodic Table is now considered as an object instead of a function!
+    Note: I recommend to Download latest version of chemaphy package...
+    
+ version- (11:01PM 7/10/2022)
+ - 17th release
+    Changes: Modifications
     Note: I recommend to Download latest version of chemaphy package...
 
