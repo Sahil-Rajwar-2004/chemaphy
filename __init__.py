@@ -4,7 +4,7 @@ import math
 import trigo
 import statistics as stats
 
-VERSION = "1.0.0"
+VERSION = "1.1.0"
 AUTHOR = "Sahil Rajwar"
 LINK = "https://github.com/Sahil-Rajwar-2004/chemaphy"
 
