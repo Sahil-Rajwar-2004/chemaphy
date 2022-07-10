@@ -1,9 +1,9 @@
 Change Log:
 ==========
 
-+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
-|Note: Download the latest version only! (v-0.9.0) bugs free,fast calculation and new features|
-+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
++~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
+|Note: Download the latest version only! (v-1.0.0) with bugs free, fast calculation and new features|
++~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
 
 version-0.1 (12:01 PM 5/30/2022)
 -----------------------
@@ -78,5 +78,11 @@ version-0.9.0 (2:38 AM 6/24/2022)
 -----------------------
 - Fourteenth release
     New Feature: Binary Converter
-    Note: I recommend to Download the latest version of chemaphy package...
+    Note: I recommend to Download latest version of chemaphy package...
+
+version-1.0.0 (10:37 PM 7/10/2022)
+-----------------------
+- Fourteenth release
+    Major Changes: Periodic Table is now considered as an object instead of a function!
+    Note: I recommend to Download latest version of chemaphy package...
 
