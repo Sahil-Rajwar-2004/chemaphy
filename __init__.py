@@ -4,9 +4,10 @@ import math
 import trigo
 import statistics as stats
 
-VERSION = "1.1.0"
+VERSION = "1.3.0"
 AUTHOR = "Sahil Rajwar"
 LINK = "https://github.com/Sahil-Rajwar-2004/chemaphy"
+EMAIL = "justsahilrajwar2004@gmail.com"
 
 
             #NOTE#
@@ -32,7 +33,7 @@ gas_constant = Constant(8.3145,"J mol^(-1) K^(-1)","Gas Constant")
 pi = Constant(3.1415,None,None)
 exp = Constant(2.7182,None,None)
 inf = Constant(np.inf,None,"Infinity")
- 
+
 ang = Constant(1e-10,"m","Angstrom Measuring unit `1A = 10^(-10)m`")
 exa = Constant(1e18,None,None)
 peta = Constant(1e15,None,None)
@@ -981,11 +982,11 @@ class PeriodicTable:
 
 
     def symbol(symbol_) -> str:
-        position = PeriodicTable.data.index[PeriodicTable.data["Symbol"] == symbol_].tolist()[0]
+        position = PeriodicTable.data.index[PeriodicTable.data["Symbol"].str.lower() == symbol_.lower()].tolist()[0]
         return PeriodicTable.data.iloc[position]
 
     def element(element_name) -> str:
-        position = PeriodicTable.data.index[PeriodicTable.data["Element"] == element_name].tolist()[0]
+        position = PeriodicTable.data.index[PeriodicTable.data["Element"].str.lower() == element_name.lower()].tolist()[0]
         return PeriodicTable.data.iloc[position]
 
     def atomic_number(atomic_number) -> int:
