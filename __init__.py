@@ -4,6 +4,10 @@ import math
 import trigo
 import statistics as stats
 
+VERSION = "1.0.0"
+AUTHOR = "Sahil Rajwar"
+LINK = "https://github.com/Sahil-Rajwar-2004/chemaphy"
+
 
             #NOTE#
 """
@@ -937,13 +941,58 @@ class Volume:
         return f"{round(((15+7*math.sqrt(5))/4)*side**3,2)} units cube"
 
 
-class Chemistry:
-    def PeriodicTable(element) -> str:
-        df = pd.read_csv("https://raw.githubusercontent.com/Sahil-Rajwar-2004/Datasets/main/elements.csv")
-        df.rename(columns = {"MeltingPoint":"MeltingPoint (K)","BoilingPoint":"BoilingPoint (K)"}, inplace = True)
-        data = df[["Element","Symbol","AtomicNumber","AtomicMass","NumberofNeutrons","NumberofProtons","NumberofElectrons","Period","Group","Phase","MeltingPoint (K)","BoilingPoint (K)"]]
-        return data[data["Element"].str.lower() == element]
+class PeriodicTable:
 
+    data = pd.read_csv("https://raw.githubusercontent.com/Sahil-Rajwar-2004/Datasets/main/elements.csv")
+
+    def table():
+        return ("""
+
+                1  2  3   4  5  6  7  8  9  10 11 12 13 14 15 16 17 18
+            1    H                                                   He
+            2    Li Be                                B  C  N  O  F  Ne
+            3    Na Mg                                Al Si P  S  Cl Ar
+            4    K  Ca Sc  Ti V  Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr
+            5    Rb Sr Y   Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I  Xe
+            6    Cs Be La- Hf Ta W  Re Os Ir Pt Au Hg Tl Pd Bi Po At Rn
+            7    Fr Ra Ac- Rf Db Sg Bh Hs Mt Ds Rg Cn Nh Fl Mc Lv Ts Og
+
+                        -Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu
+                        -Th Pa U  Np Pu Am Cm Bk Cf Es Fm Md No Lr
+
+                """)
+
+    def spdf():
+        return ("""
+                1s
+                2s 2p
+                3s 3p 3d
+                4s 4p 4d 4f
+                5s 5p 5d 5f
+                6s 6p 6d
+                7s 7p
+
+                s orbital can have -> [1 to 2] electrons
+                p orbital can have -> [1 to 6] electrons
+                d orbital can have -> [1 to 10] electrons
+                f orbital can have -> [1 to 14] electrons
+
+                """)
+
+
+    def symbol(symbol_) -> str:
+        position = PeriodicTable.data.index[PeriodicTable.data["Symbol"] == symbol_].tolist()[0]
+        return PeriodicTable.data.iloc[position]
+
+    def element(element_name) -> str:
+        position = PeriodicTable.data.index[PeriodicTable.data["Element"] == element_name].tolist()[0]
+        return PeriodicTable.data.iloc[position]
+
+    def atomic_number(atomic_number) -> int:
+        return PeriodicTable.data.iloc[atomic_number-1]
+
+
+class Chemistry:
     def HalfLifeZeroOrder(Ao,k) -> int:
         """
             Ao(Initial Concentration): int
