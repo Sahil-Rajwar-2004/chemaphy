@@ -4,6 +4,7 @@ from chemaphy import LogicGates as lg
 from chemaphy import AlternatingCurrent as ac
 from chemaphy import Statistics as stats
 from chemaphy import Temperature as temp
+from chemaphy import PeriodicTable as pt
 from chemaphy import BinaryConverter
 
 print(pm.(100,chemaphy.g_earth.value,45))
@@ -32,3 +33,7 @@ print(BinaryConverter.int2hexadecimal(5))
 
 print(BinaryConverter.int2octadecimal([1,2,3,4,5]))
 print(BinaryConverter.int2octadecimal(5))
+
+print(pt.atomic_number(17))
+print(pt.element("chlorine"))
+print(pt.symbol("cl"))
