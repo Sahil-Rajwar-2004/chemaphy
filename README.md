@@ -35,6 +35,7 @@ import chemaphy
 from chemaphy import ProjectileMotion as pm
 from chemaphy import LogarithmicFunction as lf
 from chemaphy import Statistics
+from chemaphy import PeriodicTable as pt
 
 print(chemaphy.pi.value)
 print(pm.HorizontalRange(100,chemaphy.g_earth.value,45))
@@ -43,6 +44,7 @@ print(lf.log_10(2))
 print(Statistics.Mean([1,2,3,4,5,6,7,8,9,0]))
 print(Statistics.Median([1,2,3,4,5,6,7,8,9,0]))
 print(Statistics.Quartiles([375, 211, 23, 39, 118, 97, 971, 702, 143, 9]))
+print(pt.element("sodium"))
 ```
 ### Output
 
@@ -54,6 +56,35 @@ print(Statistics.Quartiles([375, 211, 23, 39, 118, 97, 971, 702, 143, 9]))
 4.5
 5.5
 [39, 130.5, 375] -> [Higher Quartile, Middle Quartile, Lower Quartile]
+AtomicNumber                         11
+Element                          Sodium
+Symbol                               Na
+AtomicMass                        22.99
+ElectronicConfiguration         [Ne]3s1
+NumberofNeutrons                     12
+NumberofProtons                      11
+NumberofElectrons                    11
+Period                                3
+Group                               1.0
+Phase                             solid
+Unstable                             no
+Stable                              yes
+Metal                               yes
+Nonmetal                             no
+Metalloid                            no
+Type                       Alkali Metal
+AtomicRadius                        2.2
+Electronegativity                  0.93
+FirstIonization                  5.1391
+Density                           0.971
+MeltingPoint                     371.15
+BoilingPoint                     1156.0
+NumberOfIsotopes                    7.0
+Discoverer                         Davy
+Year                             1807.0
+SpecificHeat                      1.228
+NumberofShells                        3
+NumberofValence                     1.0
 ```
 
 # Constants
