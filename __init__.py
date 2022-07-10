@@ -32,7 +32,7 @@ gas_constant = Constant(8.3145,"J mol^(-1) K^(-1)","Gas Constant")
 pi = Constant(3.1415,None,None)
 exp = Constant(2.7182,None,None)
 inf = Constant(np.inf,None,"Infinity")
-
+ 
 ang = Constant(1e-10,"m","Angstrom Measuring unit `1A = 10^(-10)m`")
 exa = Constant(1e18,None,None)
 peta = Constant(1e15,None,None)
