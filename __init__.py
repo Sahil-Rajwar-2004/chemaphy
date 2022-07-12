@@ -4,11 +4,6 @@ import math
 import trigo
 import statistics as stats
 
-VERSION = "1.3.0"
-AUTHOR = "Sahil Rajwar"
-LINK = "https://github.com/Sahil-Rajwar-2004/chemaphy"
-EMAIL = "justsahilrajwar2004@gmail.com"
-
 
             #NOTE#
 """
@@ -294,6 +289,13 @@ class AlternatingCurrent:
 
 
 class Statistics:
+    def MinMax(args) -> list:
+        sorting = sorted(args, reverse = False)
+        return [sorting[0],sorting[len(sorting)-1]]
+
+    def Count(args) -> list:
+        return len(args)
+
     def Factorial(num) -> int:
         """
         It is the product of less than equal to n(number).\n
@@ -1335,3 +1337,15 @@ class Vectors:
         m = math.sqrt(i**2+j**2+k**2)
 
         return f"{round(m,2)}"
+
+
+
+
+
+
+
+# Details
+VERSION = "1.3.1"
+AUTHOR = "Sahil Rajwar"
+LINK = "https://github.com/Sahil-Rajwar-2004/chemaphy"
+EMAIL = "justsahilrajwar2004@gmail.com"
