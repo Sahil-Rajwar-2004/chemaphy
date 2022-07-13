@@ -687,6 +687,25 @@ class Statistics:
             return "Length of both parameters are unequal"
 
 
+class Stack:
+    def __init__(self):
+        self.stack = []
+    def push(self,item):
+        self.stack.append(item)
+    def pop(self):
+        if len(self.stack) > 0:
+            return self.stack.pop()
+        else:
+            return None
+    def peek(self):
+        if len(self.stack) > 0:
+            return self.stack[len(self.stack)-1]
+        else:
+            return None
+    def __str__(self):
+        return str(self.stack)
+
+
 class BinaryConverter:
     def str2binary(args) -> str:
         l = []
@@ -1345,7 +1364,7 @@ class Vectors:
 
 
 # Details
-VERSION = "1.3.1"
+VERSION = "1.4.0"
 AUTHOR = "Sahil Rajwar"
 LINK = "https://github.com/Sahil-Rajwar-2004/chemaphy"
 EMAIL = "justsahilrajwar2004@gmail.com"
