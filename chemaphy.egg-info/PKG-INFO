@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: chemaphy
+Version: 2.10.0
+Summary: Package for Scientific calculation
+Home-page: https://github.com/Sahil-Rajwar-2004/chemaphy
+Author: Sahil Rajwar
+Author-email: justsahilrajwar2004@gmail.com
+Maintainer: its_Sahil
+License: MIT
+Keywords: calculator,scipy,calc,chemaphy
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+
+For more info, check the github repository
+

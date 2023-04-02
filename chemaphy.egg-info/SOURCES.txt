@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+changelog.txt
+setup.py
+chemaphy/__init__.py
+chemaphy/about.py
+chemaphy.egg-info/PKG-INFO
+chemaphy.egg-info/SOURCES.txt
+chemaphy.egg-info/dependency_links.txt
+chemaphy.egg-info/requires.txt
+chemaphy.egg-info/top_level.txt

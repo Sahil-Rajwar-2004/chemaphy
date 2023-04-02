@@ -1,0 +1,359 @@
+Change Log:
+==========
+
+[Time AM/PM mm/dd/yyyy]
+
++~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
+|Note: Download the latest version only! (v-2.10.0) with bugs free, fast calculation, more stability + new features|
++~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
+
+version-0.1 (12:01 PM 5/30/2022)
+-----------------------
+- 1st Release
+
+version-0.2 (2:49 AM 6/1/2022)
+-----------------------
+- 2nd Release
+
+version-0.3 (5:24 PM 6/2/2022)
+-----------------------
+- 3rd Release
+
+Note (7:23 PM 6/3/2022)
+-----------------------
+- version-0.4 couldn't be uploaded because of bugs
+
+version-0.5 (8:34 PM 6/3/2022)
+-----------------------
+- 5th Release (all the bugs has been resolved)
+
+version-0.6 (2:13 PM 6/4/2022)
+-----------------------
+- 6th Release
+
+NOTE (2:21 AM 6/6/2022)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ version-0.7 (Work in progress...) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+version-0.7 (7:05 PM 6/9/2022)
+-----------------------
+- 7th Release
+    New Feature is added called Statistics to deal with different datasets.
+
+version-0.7.1 (10:19 PM 6/9/2022)
+-----------------------
+- 8th Release
+    Bug Fixes
+
+version-0.7.2 (8:02 PM 6/13/2022)
+-----------------------
+- 9th Release
+    Minor Changes: Improvements in some functions to make more reliable and fast computing.
+
+version-0.7.3 (12:38 AM 6/15/2022)
+-----------------------
+- 10th Release
+    Minor Changes: Round of figure MSE (Mean Squared Error) function were added
+
+version-0.7.4 (9:36 PM 6/16/2022)
+-----------------------
+- 11th release
+    Major Changes: Bug fixed in Quartiles function
+
+version-0.7.5 (6:17 PM 6/18/2022)
+-----------------------
+- 12th release
+    New Feature: Inter Quartiles Range(IQR) and Outliers
+
+version-0.7.6 (2:53 PM 6/20/2022)
+-----------------------
+- 13th release
+    Major Changes: Calculation error in Quartiles has been fixed!
+    Note: I recommend to Download latest version of chemaphy package...
+
+version-0.8.0 (12:02 AM 6/23/2022)
+-----------------------
+- 14th release
+    New Feature: Temperature Converter
+    Note: I recommend to Download latest version of chemaphy package...
+
+version-0.9.0 (2:38 AM 6/24/2022)
+-----------------------
+- 15th release
+    New Feature: Binary Converter
+    Note: I recommend to Download latest version of chemaphy package...
+
+Note (11:01PM 7/10/2022)
+-----------------------
+VERSION 1.0.0, 1.1.0 and 1.2.0 are not available now or in the future, these versions are useless so I recommend you to download the latest version 1.3.0 or above
+
+version-1.3.0 (12:01AM 7/10/2022)
+-----------------------
+ - 19th release
+    Major Changes: All the bugs has been solved
+    Note: I recommend to Download version-1.3.0 or above
+
+version-1.3.1 (6:37 PM 7/12/2022)
+-----------------------
+ - 20th release
+    New Features: MinMax and Count function added
+
+version-1.4.0 (12:31 AM 7/14/2022)
+-----------------------
+ - 21st release
+    New Features: Stack class
+
+version-1.5.0 (3:57 PM 7/29/2022)
+-----------------------
+ - 22nd release
+    New Features: Pressure,Time and Angle Conversion as well as Binding energy.
+
+version-1.5.1 (11:54 PM 7/30/2022)
+-----------------------
+ - 23rd release
+    New Features: Difference in lists
+
+Note (1:17 AM 7/31/2022)
+-----------------------
+version-1.5.2 have some bugs we won't recommend you to download this version
+
+version-1.5.3 (9:37 PM 7/31/2022)
+-----------------------
+ - 25th release
+    Changes: Add,Multiply are Division are bug free
+
+version-1.5.4 (12:13 AM 8/4/2022)
+-----------------------
+ - 26th release
+    Changes: Improvements in Statistics
+
+version-1.6.0 (12:07 AM 8/7/2022)
+-----------------------
+ - 27th release
+    New Features: Load Datasets
+
+version-1.6.1 (12:39 AM 8/8/2022)
+-----------------------
+ - 28th release
+    Minor Changes: Handle the exceptional error in Load Datasets
+
+version-1.6.2 (12:56 AM 8/9/2022)
+-----------------------
+ - 29th release
+    Changes: MeanError function is added in Statistics
+
+version-1.6.3 (12:40 AM 8/12/2022)
+-----------------------
+ - 30th release
+    Changes: Some new Datasets were added and some Improvements in Statistics
+             1. cwg_players_participated.csv
+             2. cwg_players_won_medal.csv
+             3. employees_info.csv
+
+version-1.7.0 (11:32 PM 8/14/2022)
+-----------------------
+ - 31st release
+    Changes: Improvements and stability
+
+version-1.7.1 (11:50 PM 8/15/2022)
+-----------------------
+ - 32nd release
+    Changes: new function called CostFunction were added
+
+version-1.8.0 (11:50 PM 8/16/2022)
+-----------------------
+ - 33rd release
+    Changes: Stability
+
+version-1.9.0 (10:55 PM 8/19/2022)
+-----------------------
+ - 34th release
+    Major Changes: class Algorithm added
+                   1. Prime
+                   2. Length (array/list)
+                   3. Sort (sorting of array/list)
+
+version-1.9.1 (6:53 PM 8/20/2022)
+-----------------------
+ - 35th release
+    Changes: 1. New Datasets winequality-red.csv
+             2. Improvements in Statistics.Accuracy
+
+
+NOTE: version-2.0.0 is unavailable due to some major issues
+
+version-2.0.1 (10:03 PM 8/21/2022)
+-----------------------
+ - 36th release
+    Major Changes: 1. fixed issues in Statistics
+                   2. Stability
+
+version-2.1.0 (7:36 PM 8/28/2022)
+-----------------------
+ - 37th release
+    Changes: HashList new concept
+
+version-2.1.1 (8:01 PM 9/1/2022)
+-----------------------
+ - 38th release
+    Changes: New Datasets
+             1. google.csv
+             2. meta.csv
+             3. apple.csv
+             4. microsoft.csv
+             5. tesla.csv
+             6. colgate.csv
+             7. amazon.csv
+             8. netflix.csv
+
+version-2.1.2 (5:34 PM 9/2/2022)
+-----------------------
+ - 39th release
+    Modification: Statistics.RunningMean is now Statistics.MovingAvg
+
+version-2.2.0 (9:38 AM 9/12/2022)
+-----------------------
+ - 40th release
+    Major Changes: 1. trumiles.csv were added
+                   2. Graphs are introduce to plotting by using matplotlib library
+
+version-2.2.1 (11:55 AM 9/24/2022)
+-----------------------
+ - 41st release
+   New Feature: Random Sampling of data and list/array in Statistics class
+
+version-2.2.2 (10:56 PM 10/3/2022)
+-----------------------
+ - 42nd release
+   Minor Changes: Change the way of calling the function in PeriodicTable class
+                  1. PeriodicTable.spdf() -> PeriodicTable.SPDF()
+                  2. PeriodicTable.element() -> PeriodicTable.Element()
+                  3. PeriodicTable.table() -> PeriodicTable.Table()
+                  4. PeriodicTable.symbol() -> PeriodicTable.Symbol()
+                  5. PeriodicTable.atomic_number() -> PeriodicTable.AtomicNumber()
+
+version-2.2.3 (10:12 PM 10/7/2022)
+-----------------------
+ - 43rd release
+   Minor Changes: duplicates() function now have a class called Algorithm.Duplicates()
+
+version-2.3.0 (10:10 AM 10/8/2022)
+-----------------------
+ -44th release
+  Changes: Modification in a class called LogicGates
+
+version-2.4.0 (8:31 PM 10/12/2022)
+-----------------------
+ -45th release
+  Changes: Root Mean Squared Error is added in Statistics class called by Statistics.RootMeanSquaredError()
+
+version-2.4.1 (10:42 PM 10/30/2022)
+-----------------------
+ -46th release
+  Minor Changes: minor changes in class LogicGates!
+
+version-2.5.0 (8:11 PM 11/13/2022)
+-----------------------
+ -47th release
+  Major Changes: Bits class is added and introduce the new constant 'nan'
+
+version-2.5.1 (8:27 PM 11/15/2022)
+-----------------------
+ -48th release
+  Minor Changes: In Bits class function Bits will be call as flipBits
+
+version-2.5.2 (8:01 PM 11/23/2022)
+-----------------------
+ -49th release
+  Changes: XOR,bin2um and num2bin functions are added in Bits class
+
+version-2.5.3 (4:34 PM 12/4/2022)
+-----------------------
+ -50th release [NOTE v-2.5.2 there was an error Bits.bin2num function which were fixed in this version(v-2.5.3)]
+  Major Changes: 1. An error were fixed in Bits.bin2num function which were occured on previous(v-2.5.2) version
+                 2. bitwise shift operator functions were added in Bits class
+                 3. flipbits is now flipBits
+                 4. bitwiseComplement were added in class called Bits
+
+version-2.5.4 (6:41 PM 12/5/2022) [Useless]
+-----------------------
+ -51st release
+  Minor Chenages: small changes
+
+version-2.5.5 (12:12 PM 12/11/2022)
+-----------------------
+ -52nd release
+  Major Update: bug were occured in v-2.5.4 and it has been fixed in this version(v-2.5.5)
+                error: Traceback (most recent call last):
+                       File "<pyshell#1>", line 1, in <module>
+                           import chemaphy
+                       File "C:\Users\a\AppData\Local\Programs\Python\Python310\lib\site-packages\chemaphy\__init__.py", line 85, in <module>
+                           gPluto = Constant()
+                       TypeError: Constant.__init__() missing 3 required positional arguments: 'value', 'units', and 'info'
+
+version-2.5.6 (9:37 PM 12/14/2022)
+-----------------------
+ -53rd release
+  Update: more Constant were added
+          example: lakh,tenLakh,crore and tenCrore
+
+version-2.5.7 (6:48 PM 12/15/2022)
+-----------------------
+ -54th release
+  Update: More Stability
+
+version-2.6.0 (8:04 PM 1/6/2023)
+-----------------------
+ -55th release
+  Update: New classes has been created called Bool,Mathematics and Calculus
+
+version-2.6.1 (1:03 AM 1/10/2023)
+-----------------------
+ -56th release
+  Update: LogarithimFunction will be known as LogFunction
+
+version-2.6.2 (12:10 AM 2/4/2023)
+-----------------------
+ -57th release
+  Minor Update: answer will be 6digits long after the decimal
+
+version-2.7.0 (10:47 PM 2/5/2023)
+-----------------------
+ -58th release
+  Update: confusion-matrix were added in class called Statistics
+
+version-2.7.1 (7:02 PM 2/6/2023)
+-----------------------
+ -59th release
+  Warning: Useless version
+
+version-2.7.2 (7:26 PM 2/6/2023)
+-----------------------
+ -60th release
+  Update: problem has been fixed in this version
+
+version-2.8.0 (6:01 PM 2/17/2023)
+-----------------------
+ -61st release
+  Update: new avatar and few modification in vector class
+
+version-2.8.1 (2:47 PM 2/19/2023)
+-----------------------
+ -62nd release
+  Update: modifications and more stability
+
+####### version-2.8.2 is useless #######
+
+version-2.8.3 (8:26 PM 3/26/2023)
+-----------------------
+ -64th release
+  Update: exponential moving average
+
+version-2.9.0 (12:11 AM 4/2/2023)
+-----------------------
+  -65th release
+   Update: Sorting Algorithm are added + changes in factorial function + fibonacci series
+
+version-2.10.0 (8:54 PM 4/2/2023)
+-----------------------
+ -66th release
+  Update: Sets updated
