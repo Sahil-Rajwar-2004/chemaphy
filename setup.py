@@ -2,7 +2,7 @@ from setuptools import setup,find_packages
 
 setup(
     name = "chemaphy",
-    version = "2.10.0",
+    version = "2.11.0",
     description = "Package for Scientific calculation",
     long_description = "For more info, check the github repository",
     author = "Sahil Rajwar",

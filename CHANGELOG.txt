@@ -4,7 +4,7 @@ Change Log:
 [Time AM/PM mm/dd/yyyy]
 
 +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
-|Note: Download the latest version only! (v-2.10.0) with bugs free, fast calculation, more stability + new features|
+|Note: Download the latest version only! (v-2.11.0) with bugs free, fast calculation, more stability + new features|
 +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
 
 version-0.1 (12:01 PM 5/30/2022)
@@ -357,3 +357,8 @@ version-2.10.0 (8:54 PM 4/2/2023)
 -----------------------
  -66th release
   Update: Sets updated
+
+version-2.11.0 (2:47 PM 4/3/2023)
+-----------------------
+ -67th release
+  Update: Searching algorithm (linear and binary)

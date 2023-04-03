@@ -1,6 +1,7 @@
 CHANGELOG.txt
 LICENSE.txt
 MANIFEST.in
+README.md
 changelog.txt
 setup.py
 chemaphy/__init__.py

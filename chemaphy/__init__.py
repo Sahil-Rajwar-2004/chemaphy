@@ -535,6 +535,26 @@ class Sort:
         return array
 
 
+class Search:
+    def linear_search(array:list,target:int) -> int:
+        for i in range(len(array)):
+            if array[i] == target:
+                return i
+        return -1
+    
+    def binary_search(array:list,target:int) -> int:
+        start = 0
+        end = len(array)-1
+        while start <= end:
+            mid = (start+end)//2
+            if array[mid] == target:
+                return mid
+            elif array[mid] < target:
+                start = mid + 1
+            elif array[mid] > target:
+                end = mid - 1
+        return -1
+
 class Statistics:
     def error(args:(list|np.ndarray),kwargs:(list|np.ndarray)):
         if len(args) == len(kwargs):
