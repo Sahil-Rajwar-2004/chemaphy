@@ -4,6 +4,7 @@ MANIFEST.in
 README.md
 changelog.txt
 setup.py
+test.py
 chemaphy/__init__.py
 chemaphy/about.py
 chemaphy.egg-info/PKG-INFO

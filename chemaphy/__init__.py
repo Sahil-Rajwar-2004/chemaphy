@@ -126,6 +126,9 @@ massNeptune = Constant(1.024e26,"kg","Mass of Neptune")
 radiusNeptune = Constant(24622000,"m","Radius of Neptune")
 
 
+class Any:
+    Any = [int,float,bool,str]
+
 class Calculus:
     def differentiate(function:str,wrt:str = "x"):
         return sympy.diff(function,sympy.Symbol(wrt))
@@ -393,7 +396,7 @@ class AlternatingCurrent:
         return Q
 
 
-class Algorithm:
+class Algo:
     def fibonacci_series(number:int) -> int:
         seq = [0,1]
         if number <= 0:
@@ -446,35 +449,10 @@ class Algorithm:
             if sort.count(i) >= 1:
                 repeat.update({i:sort.count(i)})
         return repeat
-
-
-class Graphs:
-    def plot(x,y,xlabel=None,ylabel=None,title=None,xs=6.4,ys=4.8,yscale="linear",xscale="linear",marker="None",style_="classic",size=8):
-        plt.figure(figsize = (xs,ys))
-        style.use(style_)
-        plt.yscale(yscale)
-        plt.xscale(xscale)
-        plt.plot(x,y, marker = marker, markersize = size)
-        plt.xlabel(xlabel)
-        plt.ylabel(ylabel)
-        plt.title(title)
-        plt.show()
-
-    def scatter(x:np.ndarray|list,y:np.ndarray|list,xlabel=None,ylabel=None,title=None,xs=6.4,ys=4.8,yscale="linear",xscale="linear",marker="o",style_="classic",size=8):
-        plt.figure(figsize = (xs,ys))
-        style.use(style_)
-        plt.yscale(yscale)
-        plt.xscale(xscale)
-        plt.scatter(x,y, marker = marker, markersize = size)
-        plt.xlabel(xlabel)
-        plt.ylabel(ylabel)
-        plt.title(title)
-        plt.show()
-
-    def pie(x:np.ndarray|list,labels:list,shadow=False,radius=1,a=0,b=0,labeldistance=1.1,title=None):
-        plt.title(title)
-        plt.pie(x,labels = labels,shadow=shadow,center=(a,b),labeldistance=labeldistance,radius=radius)
-        plt.show()
+    
+    def swap(x:Any,y:Any) -> Any:
+        x,y = y,x
+        return [x,y]
 
 
 class Sort:
@@ -533,6 +511,15 @@ class Sort:
                 k += 1
 
         return array
+    
+    def selection_sort(array:list) -> list:
+        for i in range(len(array)):
+            min_val = i
+            for j in range(i+1,len(array)):
+                if(array[j] < array[min_val]):
+                    min_val = j
+            array[i],array[min_val] = array[min_val],array[i]
+        return array
 
 
 class Search:
@@ -554,6 +541,7 @@ class Search:
             elif array[mid] > target:
                 end = mid - 1
         return -1
+
 
 class Statistics:
     def error(args:(list|np.ndarray),kwargs:(list|np.ndarray)):
@@ -2310,6 +2298,35 @@ class Perimeter:
 
     def Sector(radius,angle:(int|float)):
         return (2*radius)+((angle/360)*2*pi.value*radius)
+
+
+class Graphs:
+    def plot(x,y,xlabel=None,ylabel=None,title=None,xs=6.4,ys=4.8,yscale="linear",xscale="linear",marker="None",style_="classic",size=8):
+        plt.figure(figsize = (xs,ys))
+        style.use(style_)
+        plt.yscale(yscale)
+        plt.xscale(xscale)
+        plt.plot(x,y, marker = marker, markersize = size)
+        plt.xlabel(xlabel)
+        plt.ylabel(ylabel)
+        plt.title(title)
+        plt.show()
+
+    def scatter(x:np.ndarray|list,y:np.ndarray|list,xlabel=None,ylabel=None,title=None,xs=6.4,ys=4.8,yscale="linear",xscale="linear",marker="o",style_="classic",size=8):
+        plt.figure(figsize = (xs,ys))
+        style.use(style_)
+        plt.yscale(yscale)
+        plt.xscale(xscale)
+        plt.scatter(x,y, marker = marker, markersize = size)
+        plt.xlabel(xlabel)
+        plt.ylabel(ylabel)
+        plt.title(title)
+        plt.show()
+
+    def pie(x:np.ndarray|list,labels:list,shadow=False,radius=1,a=0,b=0,labeldistance=1.1,title=None):
+        plt.title(title)
+        plt.pie(x,labels = labels,shadow=shadow,center=(a,b),labeldistance=labeldistance,radius=radius)
+        plt.show()
 
 
 class Volume:
