@@ -17,7 +17,3 @@ print(Sort.merge_sort(array))
 x = [1,2,3,1,5]
 y = [1,3,5]
 print(Sets.union(Sets.set(x),Sets.set(y)))
-
-
-
-

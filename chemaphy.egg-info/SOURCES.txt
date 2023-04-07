@@ -4,9 +4,9 @@ MANIFEST.in
 README.md
 changelog.txt
 setup.py
-test.py
 chemaphy/__init__.py
 chemaphy/about.py
+chemaphy/test.py
 chemaphy.egg-info/PKG-INFO
 chemaphy.egg-info/SOURCES.txt
 chemaphy.egg-info/dependency_links.txt

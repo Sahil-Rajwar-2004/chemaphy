@@ -1,4 +1,5 @@
 from urllib.error import HTTPError
+from urllib.request import urlopen
 import numpy as np
 import pandas as pd
 import math
@@ -8,6 +9,7 @@ import sympy
 import statistics as stats
 from matplotlib import pyplot as plt
 from matplotlib import style
+import re
 from .about import (
     author,
     version,
@@ -186,7 +188,7 @@ class Mathematics:
 
 
 class ModernPhysics:
-    data = pd.read_csv("https://raw.githubusercontent.com/Sahil-Rajwar-2004/Datasets/main/elements.csv")
+    data = pd.read_csv("https://raw.githubusercontent.com/Sahil-Rajwar-2004/Datasets/master/elements.csv")
     def kinetic_energy_of_electron(Z:int,n:int):
         K = (massElectron.value*(Z**2)*(e.value**4))/(8*(epsilon0.value**2)*(h.value**2)*(n**2))
         return K
@@ -1109,45 +1111,20 @@ class Statistics:
 
 
 class LoadData:
-    def load_data(file:str,ext:str = "csv"):
+    def load_data(file:str,ext:str = "csv",lim = ","):
         try:
-            if file.lower() != "student_mat":
-                return pd.read_csv(f"https://raw.githubusercontent.com/Sahil-Rajwar-2004/Datasets/main/{file}.{ext}")
-            else:
-                return pd.read_csv(f"https://raw.githubusercontent.com/Sahil-Rajwar-2004/Datasets/main/{file}.{ext}",sep = ";")
+            src = f"https://raw.githubusercontent.com/Sahil-Rajwar-2004/Datasets/master/{file}.{ext}"
+            return pd.read_csv(src,sep = lim)
         except HTTPError as error:
-            return f"{error} | {file}.{ext} not found! | try to change the extension .{ext} or filename"
+            return f"{error} | {file}.{ext} not found! | try changing the extension .{ext} or filename."
 
     def data_name():
-        return ["amazon",
-                "apple",
-                "binance_coin",
-                "bitcoin",
-                "breast_cancer",
-                "colgate",
-                "cwg_players_participated",
-                "cwg_players_won_medal",
-                "doge_coin",
-                "ds_salaries",
-                "elements",
-                "employees_info",
-                "ethereum_coin",
-                "google",
-                "iris",
-                "meta",
-                "microsoft",
-                "music",
-                "netflix",
-                "programming_lang_data",
-                "quikr_cars",
-                "student_mat",
-                "tesla",
-                "tic_tac_toe",
-                "tips",
-                "trumiles",
-                "weather",
-                "weight_height",
-                "winequality-red"]
+        url = "https://github.com/Sahil-Rajwar-2004/Datasets"
+        with urlopen(url) as resp:
+            html = resp.read()
+        pattern = r"/Sahil-Rajwar-2004/Datasets/blob/master/(\w*).csv"
+        datasets = re.findall(pattern, html.decode())
+        return datasets
 
 
 class Stack:
@@ -2376,7 +2353,7 @@ class Volume:
 
 
 class PeriodicTable:
-    data = pd.read_csv("https://raw.githubusercontent.com/Sahil-Rajwar-2004/Datasets/main/elements.csv")
+    data = pd.read_csv("https://raw.githubusercontent.com/Sahil-Rajwar-2004/Datasets/master/elements.csv")
     def table():
         return ("""
 

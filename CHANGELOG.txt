@@ -4,7 +4,7 @@ Change Log:
 [hr:min (AM/PM) (mm/dd/yyyy)]
 
 +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
-|Note: Download the latest version only! (v-2.12.0) with bugs free, fast calculation, more stability + new features|
+|Note: Download the latest version only! (v-2.12.1) with bugs free, fast calculation, more stability + new features|
 +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
 
 version-0.1 (12:01 PM 5/30/2022)
@@ -367,3 +367,8 @@ version-2.12.0 (6:29 PM 4/6/2023)
 -----------------------
  -68th release
   Update: insertion_sort + swaping two variable
+
+version-2.12.1 (12:48 AM 4/8/2023)
+-----------------------
+ -69th release
+  Update: Optimized LoadData class
