@@ -14,13 +14,13 @@ from .about import (
     author,
     version,
     authorEmail,
-    homepage
+    HomePage
 )
 
-__author__ = author
-__version__ = version
-__email__ = authorEmail
-__homepage__ = homepage
+author = author
+version = version
+email = authorEmail
+homepage = HomePage
 
 
             #NOTE#
@@ -37,11 +37,13 @@ class Constant:
 
 h = Constant(6.626e-34,"joule sec","Planck's Constant")
 e = Constant(1.6e-19,"C","Charge on electron")
-epsilon0 = Constant(8.85e-12,"m^(-3) kg^(-1) s^4 A^2","permitivity in free space")
-k = Constant(9e9,"N m^2 C^(-2)","Coulombs constant")
+epsilon0 = Constant(8.85e-12,"m^(-3).kg^(-1).s^4.A^2","permitivity in free space")
+k = Constant(9e9,"N.m^2.C^(-2)","Coulombs constant")
 c = Constant(3e8,"m/s","speed of light in vacuum")
 R = Constant(1.0973e7,"m^(-1)","Rydbergs's Constant")
-gasConstant = Constant(8.3145,"J mol^(-1) K^(-1)","Gas Constant")
+gasConstant = Constant(8.3145,"J.mol^(-1).K^(-1)","Gas Constant")
+avogadro_num = Constant(6.02214e23,"mol^(-1)","Avogadro Number")
+boltzmann_const = Constant(1.380649e-23,"m^2.kg.s^(-2).K^(-1)","Boltzmann Constant")
 
 pi = Constant(3.14159265358979,None,None)
 exp = Constant(2.71828182845904,None,None)
@@ -50,8 +52,8 @@ NAN = NULL = NaN = nan = null = Constant(np.nan,None,"NaN")
 NONE = none = Constant(None,None,None)
 
 class Bool:
-    false = FALSE = 0
-    true = TRUE = 1
+    false = FALSE = False
+    true = TRUE = True
 
 googol = Constant(1e100,None,None)
 
@@ -104,7 +106,7 @@ gJupiter = Constant(24.79,"m/s^2","gravity on Jupiter")
 gSaturn = Constant(10.44,"m/s^2","gravity on Saturn")
 gUranus = Constant(8.87,"m/s^2","gravity on Uranus")
 gNeptune = Constant(11.15,"m/s^2","gravity on Neptune")
-G = Constant(6.6743e-11,"m^3 kg^(-1) s^(-2)","Gravitational Constant")
+G = Constant(6.6743e-11,"m^3.kg^(-1).s^(-2)","Gravitational Constant")
 
 massSun = Constant(1.989e30,"kg","Mass of Sun")
 radiusSun = Constant(696340000,"m","Radius of Sun")
@@ -399,7 +401,7 @@ class AlternatingCurrent:
 
 
 class Algo:
-    def fibonacci_series(number:int) -> int:
+    def fibonacci(number:int) -> int:
         seq = [0,1]
         if number <= 0:
             raise ValueError("numbe must be x > 0")
@@ -444,9 +446,9 @@ class Algo:
             count += 1
         return count
 
-    def duplicates(nums):
+    def duplicates(array:list) -> list:
         repeat = {}
-        sort = sorted(nums,reverse = False)
+        sort = Sort.quick_sort(array)
         for i in sort:
             if sort.count(i) >= 1:
                 repeat.update({i:sort.count(i)})
@@ -455,6 +457,15 @@ class Algo:
     def swap(x:Any,y:Any) -> Any:
         x,y = y,x
         return [x,y]
+    
+    def unique(array:list) -> list:
+        res = []
+        for i in array:
+            if i not in res:
+                res.append(i)
+            else:
+                continue
+        return res
 
 
 class Sort:
@@ -511,7 +522,6 @@ class Sort:
                 array[k] = right[j]
                 j += 1
                 k += 1
-
         return array
     
     def selection_sort(array:list) -> list:
@@ -521,6 +531,13 @@ class Sort:
                 if(array[j] < array[min_val]):
                     min_val = j
             array[i],array[min_val] = array[min_val],array[i]
+        return array
+
+    def str_sort(array:list)  -> list:
+        for i in range(len(array)):
+            for j in range(i + 1, len(array)):
+                if array[i] > array[j]:
+                    array[i], array[j] = array[j], array[i]
         return array
 
 
@@ -2355,7 +2372,7 @@ class Volume:
 class PeriodicTable:
     data = pd.read_csv("https://raw.githubusercontent.com/Sahil-Rajwar-2004/Datasets/master/elements.csv")
     def table():
-        return ("""
+        return (r"""
 
                  1  2  3   4  5  6  7  8  9  10 11 12 13 14 15 16 17 18
             1    H                                                   He
@@ -2372,7 +2389,7 @@ class PeriodicTable:
                 """)
 
     def spdf():
-        return ("""
+        return (r"""
                 1s
                 2s 2p
                 3s 3p 3d

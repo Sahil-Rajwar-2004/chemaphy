@@ -1,9 +1,6 @@
 from chemaphy import Statistics as stats
 from chemaphy import Sort
-from chemaphy import Algo
-from chemaphy import Matrix
 from chemaphy import Sets
-import numpy as np
 
 array = [9,8,7,6,5,4,3,2,1,0]
 
