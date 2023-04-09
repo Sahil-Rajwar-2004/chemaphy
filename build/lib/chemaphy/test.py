@@ -14,3 +14,8 @@ print(Sort.merge_sort(array))
 x = [1,2,3,1,5]
 y = [1,3,5]
 print(Sets.union(Sets.set(x),Sets.set(y)))
+
+# x = [2,2,3,4,5,5,5,6,7,8,8,8,8,8,9,9,10,11,11,12]
+# print(stats.percentile(x,45))
+# print(stats.quartiles(x))
+# print(stats.iqr(x))

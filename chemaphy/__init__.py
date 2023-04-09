@@ -668,33 +668,24 @@ class Statistics:
         """
         return Statistics.factorial(n)/(Statistics.factorial(r)*Statistics.factorial(n-r))
 
-    def quartiles(args:(list|np.ndarray)):
+    def quartiles(data:(list|np.ndarray)) -> list:
         r"""
         In statistics, a quartile is a type of quantile which divides the number of data points into four parts, or quarters, of more-or-less equal size
         the data must be in ascending order.
 
         for more info: <https://www.google.com/search?q=quartiles>
         """
-        rel = sorted(args,reverse = False)
-        if len(args)%2 == 0:
-            part = int(len(args)/2)
-            rel1 = rel[0:part]
-            rel2 = rel[part:len(rel)]
-            Q1 = Statistics.median(rel1)
-            Q2 = Statistics.median(rel)
-            Q3 = Statistics.median(rel2)
-            return [Q1,Q2,Q3]
-        else:
-            part = int(len(args)/2)
-            rel1 = rel[0:part]
-            rel2 = rel[part+1:len(rel)]
-            Q1 = Statistics.median(rel1)
-            Q2 = Statistics.median(rel)
-            Q3 = Statistics.median(rel2)
-            return [Q1,Q2,Q3]
+        sorted_data = Sort.quick_sort(data)
+        q1_index = int(len(data) * 0.25)
+        q2_index = int(len(data) * 0.5)
+        q3_index = int(len(data) * 0.75)
+        q1 = sorted_data[q1_index]
+        q2 = sorted_data[q2_index]
+        q3 = sorted_data[q3_index]
+        return [q1,q2,q3]
 
-    def iqr(args:(list|np.ndarray)):
-        q = Statistics.quartiles(args)
+    def iqr(data:(list|np.ndarray)):
+        q = Statistics.quartiles(data)
         iqr = q[len(q)-1]-q[0]
         return iqr
 
@@ -853,15 +844,15 @@ class Statistics:
         total = sum(rep)
         return total/len(args)
 
-    def percentile(args:(list|np.ndarray),n:int):
-        if n in args:
-            b = 0
-            for i in range(0,len(args)):
-                if n > args[i]:
-                    b += 1
-            return (b/len(args))*100
+    def percentile(data:(list|np.ndarray),percentage:int) -> (int|float):
+        if not 0 <= percentage <= 100:
+            raise ValueError(f"value should be in between {0} and {100} included, but got {percentage}")
+        sorted_data = Sort.quick_sort(data)
+        rank = (len(sorted_data)+1)*percentage/100
+        if type(rank) == float:
+            return sorted_data[int(rank)-1]+(rank-int(rank))*(sorted_data[int(rank)]-sorted_data[int(rank)-1])
         else:
-            return f"Unexpected Input! {n} is not in {args}!"
+            return sorted_data[rank-1]
 
     def median_avg_deviation(args:(list|np.ndarray)):
         m = sum(args)/len(args)

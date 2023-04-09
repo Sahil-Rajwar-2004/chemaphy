@@ -4,7 +4,7 @@ Change Log:
 [hr:min (AM/PM) (mm/dd/yyyy)]
 
 +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
-|Note: Download the latest version only! (v-2.12.2) with bugs free, fast calculation, more stability + new features|
+|Note: Download the latest version only! (v-2.12.3) with bugs free, fast calculation, more stability + new features|
 +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
 
 version-0.1 (12:01 PM 5/30/2022)
@@ -379,3 +379,8 @@ version-2.12.2 (9:37 PM 4/8/2023)
   Update: boltzmann constant and avogradro number were added
           find unique values from an array using Algo.unique(array)
           sorting an array of strings
+
+version-2.12.3 (7:09 PM 4/9/2023)
+-----------------------
+ -71st release
+  Update: Optimized: percentile(), quartile() and iqr() functions 
